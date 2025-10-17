@@ -15,7 +15,7 @@ public class RandomTestData {
         return faker.internet().emailAddress();
     }
     public static String getUserNumber(){
-        return faker.numerify("##########");
+        return faker.phoneNumber().subscriberNumber(10);
     }
     public static String getGender(){
         return faker.options().option("Male", "Female", "Other");
